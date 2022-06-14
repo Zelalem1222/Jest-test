@@ -1,6 +1,7 @@
 const stringLength = require('./index');
 const reverseString = require('./reverseString');
 const calculate = require('./calculator');
+const capitalize = require('./capital-first-letter');
 
 test('string lengh', () => {
   expect(stringLength('zelalem')).toBe(7);
@@ -26,8 +27,13 @@ test('multiply' , () => {
 test('divide' , ()=> {
   expect(calculate(2,1,'/')).toBe(2);
 });
-
 });
+
+test('Capitalize first letter' , ()=> {
+  expect(capitalize('microverse')).toBe('Microverse');
+})
+
+
 
 
 
